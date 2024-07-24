@@ -1,0 +1,141 @@
+.ContactUs {
+  margin: 60px auto;
+}
+
+.ContactUs-info {
+  text-align: center;
+  color: var(--white);
+  background-color: var(--darkPurple);
+  padding: 60px 20px;
+}
+
+.ContactUs-info__title {
+  max-width: 600px;
+  font-size: 3rem;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.ContactUs-info__text {
+  max-width: 600px;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  margin: 0 auto;
+}
+
+.ContactUs-form {
+  background-color: var(--darkerPurple);
+  padding: 40px 20px;
+}
+
+.ContactUs-form__name {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.ContactUs-form__element {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.ContactUs-form__element-label {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+
+.ContactUs-form__element-input {
+  height: 40px;
+  color: var(--white);
+  background-color: var(--darkPurple);
+  outline: none;
+  border-radius: 8px;
+  border: none;
+  padding: 0 10px;
+}
+
+.ContactUs-form__button {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.ContactUs-form__button button {
+  width: 100%;
+  max-width: 600px;
+  height: 40px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--white);
+  background-color: var(--purple);
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+@media (min-width: 500px) {
+  .ContactUs-form__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 800px) {
+  .ContactUs {
+    display: flex;
+    width: 90%;
+    border-radius: 60px 20px 60px 20px;
+    overflow: hidden;
+    margin: 60px auto;
+  }
+
+  .ContactUs-info {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    flex-direction: column;
+    padding: 60px 50px;
+  }
+
+  .ContactUs-info__title {
+    max-width: 340px;
+    font-size: 3.5rem;
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .ContactUs-info__text { 
+    text-align: left;
+  }
+
+  .ContactUs-form {
+    width: 60%;
+  }
+
+  .ContactUs-form__name {
+    max-width: 400px;
+  }
+  
+  .ContactUs-form__element {
+    max-width: 400px;
+  }
+
+  .ContactUs-form__button button {
+    max-width: 400px;
+  }
+}
+
+
+
+
+

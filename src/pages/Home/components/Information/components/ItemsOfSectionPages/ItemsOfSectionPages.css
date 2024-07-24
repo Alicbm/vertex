@@ -1,0 +1,31 @@
+.ItemsOfSectionPages {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  background-color: var(--lightBlack);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.ItemsOfSectionPages-icon {
+  width: 100px;
+  height: 70px;
+  display: grid;
+  place-content: center;
+  font-size: 3rem;
+  background-color: var(--rgbaBlack);
+  border-radius: 8px;
+}
+
+.ItemsOfSectionPages__info-title {
+  margin-bottom: 5px;
+}
+
+.ItemsOfSectionPages__info-text {
+  font-size: 1.6rem;
+}

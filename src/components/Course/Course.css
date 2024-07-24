@@ -1,0 +1,64 @@
+.Course {
+  width: 100%;
+  max-width: 350px;
+  background-color: var(--lightGray);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.Course-image {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.Course-image__image {
+  width: 100%;
+}
+
+.Course-image__icon {
+  position: absolute;
+  font-size: 5rem;
+  color: var(--purple);
+  bottom: -30px;
+  right: 10px;
+}
+
+.Course-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.Course-takeCourse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Course-takeCourse__level {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.Course-takeCourse__level p {
+  font-size: 1.4rem;
+}
+
+.Course-takeCourse__button {
+  color: var(--white);
+  background-color: var(--rgbaBlack);
+  border-radius: 5px;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+/* @media (min-width: 700px) {
+  .Course {
+    width: 250px;
+    max-width: 350px;
+  }
+} */
+

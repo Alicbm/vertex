@@ -1,0 +1,89 @@
+.Exams {
+  display: grid;
+  place-content: center;
+  width: 90%;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+.Exams-info__title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.Exams-info__text {
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.Exams-info__routes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.Exams-info__routes button {
+  color: var(--white);
+  font-weight: 600;
+  background-color: var(--lightGray);
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.Exams-exam {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.Exams-exam__text {
+  text-align: center;
+  color: var(--white);
+  font-size: 1.6rem;
+  background-color: var(--darkerPurple);
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 800px) {
+  .Exams {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    gap: 40px;
+  }
+
+  .Exams-info {
+    width: 50%;
+  }
+
+  .Exams-info__title {
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  .Exams-info__text {
+    text-align: left;
+  }
+  
+  .Exams-exam {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .Exams-info {
+    width: 40%;
+  }
+  
+  .Exams-exam {
+    width: 60%;
+  }
+}

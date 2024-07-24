@@ -1,0 +1,58 @@
+.Exam {
+  display: grid;
+  gap: 20px;
+}
+
+.Exam-question {
+  color: var(--white);
+  text-align: center;
+  background-color: var(--lightGray);
+  padding: 15px 10px;
+  border-radius: 8px;
+}
+
+.Exam-options {
+  display: grid;
+  gap: 10px;
+}
+
+.Exam-options__option {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: var(--white);
+  background-color: var(--lightGray);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.Exam-options__option-border {
+  min-width: 20px;
+  min-height: 20px;
+  border: 1px solid var(--purple);
+  border-radius: 50%;
+}
+
+.Exam-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.Exam-buttons button {
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--lightGray);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  cursor: pointer;
+}
+
+.Exam-buttons .Exam-buttons__confirm {
+  background-color: var(--darkerPurple);
+}

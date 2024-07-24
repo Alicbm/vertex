@@ -1,0 +1,62 @@
+.Proyect {
+  width: 100%;
+  max-width: 600px;
+  background-color: var(--lightBlack);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.Proyect-image {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.Proyect-title {
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  flex-direction: column;
+}
+
+.Proyect-title__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.Proyect-title__title-name {
+  font-size: 2.2rem;
+  color: var(--white);
+}
+
+.Proyect-title__title-route {
+  font-size: 1.4rem;
+  font-weight: bold;
+  background-color: var(--darkerPurple);
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+.Proyect-title__button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.Proyect-title__button button {
+  font-size: 1.4rem;
+  color: var(--white);
+  background-color: var(--lightGray);
+  border-radius: 5px;
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.Proyect-text {
+  text-align: justify;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+}

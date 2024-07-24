@@ -1,0 +1,35 @@
+.InputCourse {
+  width: 100%;
+  max-width: 400px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  background-color: var(--lightGray);
+  padding-right: 3px;
+  margin: 0 auto;
+}
+
+.InputCourse-input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0 50px 0 20px;
+}
+
+.InputCourse-button {
+  width: 60px;
+  height: 35px;
+  display: grid;
+  place-content: center;
+  font-size: 1.6rem;
+  color: var(--white);
+  background-color: var(--rgbaBlack);
+  border: none;
+  border-radius: 5px;
+}
+
+
