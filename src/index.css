@@ -7,7 +7,7 @@
   --purple: #652CB3;
   --darkPurple: #170C27;
   --darkerPurple: #0F0A17;
-  --rgbaBlack: rgba(34, 34, 34, 0.9);
+  --rgbaBlack: rgba(48, 48, 48, 0.116);
 }
 
 * {
@@ -29,9 +29,17 @@ body {
   font-size: 1.8rem;
 }
 
+/* clase para todos los botones */
 .button {
   border-radius: 7px;
   border: none;
   padding: 10px 25px;
   cursor: pointer;
+}
+
+/* clase para el contenido dle children recibido en MainView */
+.content-mainView {
+  background-color: var(--lightBlack);
+  padding: 0 15px;
+  margin-bottom: 20px;
 }

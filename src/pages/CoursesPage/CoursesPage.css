@@ -1,0 +1,30 @@
+.CoursesPage-filter {
+  margin-bottom: 20px;
+}
+
+.CoursesPage-courses {  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  place-items: center;
+  gap: 20px;
+}
+
+@media (min-width: 1000px) {
+  .CoursesPage-filter {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1200px) {
+  .CoursesPage-courses {  
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .CoursesPage-filter {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    place-items: center;
+  }
+}

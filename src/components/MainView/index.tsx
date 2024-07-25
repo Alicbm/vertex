@@ -1,14 +1,15 @@
 import { IoMenu } from "react-icons/io5";
-import { Course } from "../Course";
-import { InputCourse } from "../InputCourse";
-import { ItemsFilter } from "../ItemsFilter";
-import { Pagination } from "../Pagination";
 import { Menu } from "../Menu";
-import { useState } from "react";
 import './MainView.css';
 
-export function MainView () {
-  const [modal, setModal] = useState(false)
+type Props = {
+  modal: boolean;
+  setModal: (arg: boolean) => void;
+  children: React.ReactNode;
+  title: string;
+}
+
+export function MainView ({ modal, setModal, children, title }: Props) {
 
   return (
     <div className="MainView">
@@ -24,35 +25,10 @@ export function MainView () {
         </div>
 
         <div className="MainView-content__title">
-          <h1>Accede a todos los cursos</h1>
+          <h1>{ title }</h1>
         </div>
 
-        <div className="MainView-content__section">
-          <div className="MainView-content__section-filter">
-            <InputCourse />
-            <ItemsFilter />
-          </div>
-
-          <div className="MainView-content__section-courses">
-            <Course />
-            <Course />
-            <Course />
-            <Course />
-            <Course />
-            <Course />
-            <Course />
-            <Course />
-            <Course />
-            <Course />
-            <Course />
-            <Course />
-          </div>
-
-          <div className="MainView-content__section-pagination">
-            <Pagination />
-          </div>
-
-        </div>
+        { children }
 
       </div>
 

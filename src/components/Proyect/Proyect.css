@@ -1,7 +1,7 @@
 .Proyect {
   width: 100%;
   max-width: 600px;
-  background-color: var(--lightBlack);
+  background-color: var(--rgbaBlack);
   padding: 10px;
   border-radius: 5px;
 }

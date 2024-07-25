@@ -36,22 +36,6 @@
   border-bottom: 2px solid var(--rgbaBlack);
 }
 
-.MainView-content__section {
-  background-color: var(--lightBlack);
-  padding: 20px 10px;
-  margin-bottom: 20px;
-}
-
-.MainView-content__section-filter {
-  margin-bottom: 20px;
-}
-
-.MainView-content__section-courses {  
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  place-items: center;
-  gap: 20px;
-}
 
 @media (min-width: 1000px) {
   .MainView {
@@ -69,30 +53,12 @@
   }
 
   .MainView-content__title {
-    font-size: 2rem;
+    font-size: 1.6rem;
     text-align: left;
     padding-left: 30px;
   }
 
   .MainView-content__header {
     display: none;
-  }
-
-  .MainView-content__section-filter {
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 1200px) {
-  .MainView-content__section-courses {  
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  }
-
-  .MainView-content__section-filter {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    place-items: center;
   }
 }
