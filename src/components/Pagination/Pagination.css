@@ -1,0 +1,48 @@
+.Pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.Pagination-nextPage, .Pagination-page__page {
+  display: none;
+}
+
+.Pagination-page {
+  display: flex;
+  gap: 5px;
+}
+
+.Pagination button {
+  color: var(--white);
+  font-weight: bold;
+  background-color: var(--lightGray);
+}
+
+.Pagination-page__back, .Pagination-page__next {
+  font-size: 1.5rem;
+} 
+
+.Pagination-page .Pagination-page__number {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  color: var(--purple);
+}
+
+@media (min-width: 600px) {
+  .Pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 800px) {
+  .Pagination-nextPage {
+    display: block;
+  }
+}

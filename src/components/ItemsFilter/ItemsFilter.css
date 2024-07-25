@@ -1,0 +1,27 @@
+.ItemsFilter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.ItemsFilter-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--lightGray);
+}
+.ItemsFilter-item p {
+  font-size: 1.4rem;
+  color: var(--white);
+}
+
+.ItemsFilter-item span {
+  display: flex;
+  align-items: center;
+  color: var(--purple);
+  font-size: 1.4rem;
+}
