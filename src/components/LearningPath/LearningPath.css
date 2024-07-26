@@ -1,0 +1,50 @@
+.LearningPath {
+  max-width: 380px;
+  background-color: var(--rgbaBlack);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.LearningPath-path {
+  color: var(--white);
+  background-color: var(--darkPurple);
+  padding: 8px 15px;
+  margin-bottom: 10px;
+}
+
+.LearningPath-title {
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.LearningPath-text {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.LearningPath-image {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.LearningPath-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.LearningPath-buttons button {
+  width: 100%;
+  color: var(--white);
+  background-color: var(--lightGray);
+}
+
+@media (min-width: 700px) {
+  .LearningPath-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

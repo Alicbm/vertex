@@ -1,0 +1,13 @@
+.LearningPaths {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 20px;
+  padding: 30px 20px;
+}
+
+@media (min-width: 700px) {
+  .LearningPaths {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
