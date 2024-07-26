@@ -1,0 +1,30 @@
+.ExamsPage-filter {
+  margin-bottom: 20px;
+}
+
+.ExamsPage-exams {  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  place-items: center;
+  gap: 20px;
+}
+
+@media (min-width: 1000px) {
+  .ExamsPage-filter {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .ExamsPage-exams {  
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .ExamsPage-filter {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    place-items: center;
+  }
+}

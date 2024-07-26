@@ -1,0 +1,58 @@
+.ItemExam {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--rgbaBlack); 
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.ItemExam-info {
+  width: 60%;
+  display: grid;
+  gap: 10px;
+}
+
+.ItemExam-info__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.ItemExam-info__level {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100px;
+  gap: 10px;
+  color: var(--white);
+  background-color: var(--lightGray);
+  padding: 5px 10px;
+}
+
+.ItemExam-info__level span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--purple);
+}
+
+.ItemExam-info__takeExam.button {
+  max-width: 150px;
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--lightGray);
+  padding: 8px 15px;
+}
+
+.ItemExam-image {
+  width: 35%;
+  background-color: var(--lightGray);
+  padding: 10px;
+}
+
+.ItemExam-image img {
+  width: 100%;
+
+}

@@ -15,7 +15,7 @@ export function CoursesPage() {
       setModal={setModal}
       title="Accede a todos los cursos"
     >
-      <div className="CoursesPage-section content-mainView">
+      <div className="CoursesPage content-mainView">
         <div className="CoursesPage-filter">
           <InputCourse />
           <ItemsFilter />
