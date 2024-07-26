@@ -10,7 +10,7 @@ export function LearningPaths () {
     <MainView
       modal={modal}
       setModal={setModal}
-      title="Valida tus conocimientos con nuestros exámenes"
+      title="Sigue nuestras rutas de aprendizaje"
     >
       <div className="LearningPaths content-mainView">
         <LearningPath />

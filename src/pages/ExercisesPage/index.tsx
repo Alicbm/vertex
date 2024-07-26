@@ -1,34 +1,34 @@
 import { useState } from "react";
 import { MainView } from "../../components/MainView";
 import { ItemsFilter } from "../../components/ItemsFilter";
-import { Proyect } from "../../components/Proyect";
 import { Pagination } from "../../components/Pagination";
-import "./ChallengesPage.css";
+import { Exercise } from "../../components/Exercise";
+import './ExercisesPage.css';
 
-export function ChallengesPage() {
+export function ExercisesPage () {
   const [modal, setModal] = useState(false);
 
-  return (
+  return(
     <MainView
       modal={modal}
       setModal={setModal}
-      title="Lleva tus conocimientos a otro nivel"
+      title="Práctica tu lógica con nuestros ejercicios"
     >
-      <div className="ChallengesPage content-mainView">
+      <div className="content-mainView">
         <div className="ExercisesPage-filter">
           <ItemsFilter />
         </div>
 
-        <div className="ChallengesPage-proyects">
-          <Proyect />
-          <Proyect />
-          <Proyect />
-          <Proyect />
-          <Proyect />
+        <div className="ExercisesPage-proyects">
+          <Exercise />
+          <Exercise />
+          <Exercise />
+          <Exercise />
+          <Exercise />
         </div>
 
         <Pagination />
       </div>
     </MainView>
-  );
+  )
 }

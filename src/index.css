@@ -40,6 +40,12 @@ body {
 /* clase para el contenido dle children recibido en MainView */
 .content-mainView {
   background-color: var(--lightBlack);
-  padding: 0 15px;
+  padding: 0 5px;
   margin-bottom: 20px;
+}
+
+@media (min-width: 500px) {
+  .content-mainView {
+    padding: 0 15px;
+  }
 }

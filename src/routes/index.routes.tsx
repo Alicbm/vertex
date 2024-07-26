@@ -4,6 +4,7 @@ import { CoursesPage } from '../pages/CoursesPage';
 import { ChallengesPage } from '../pages/ChallengesPage';
 import { ExamsPage } from '../pages/ExamsPage';
 import { LearningPaths } from '../pages/LearningPaths';
+import { ExercisesPage } from '../pages/ExercisesPage';
 
 export function Router () {
   return (
@@ -14,6 +15,7 @@ export function Router () {
         <Route path='/challenges' element={ <ChallengesPage /> } />
         <Route path='/exams' element={ <ExamsPage /> } />
         <Route path='/learning-paths' element={ <LearningPaths /> } />
+        <Route path='/exercises' element={ <ExercisesPage /> } />
       </Routes>
     </HashRouter>
   )
