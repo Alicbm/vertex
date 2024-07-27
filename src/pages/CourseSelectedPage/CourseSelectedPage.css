@@ -1,0 +1,136 @@
+.CourseSelectedPage-video {
+  background-color: var(--rgbaBlack);
+  padding: 20px 10px;
+  margin-bottom: 20px;
+}
+
+.CourseSelectedPage-video__video {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.CourseSelectedPage-video_buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.CourseSelectedPage-video_buttons-takeExam {
+  font-size: 1.5rem;
+  background-color: var(--purple);
+}
+
+.CourseSelectedPage-video_buttons-nextBack {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.CourseSelectedPage-video_buttons-nextBack button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.5rem;
+  color: var(--white);
+  background-color: var(--lightGray);
+}
+
+.CourseSelectedPage-video_buttons-nextBack button span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--purple);
+}
+
+.CourseSelectedPage-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.CourseSelectedPage-info__title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--white);
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.CourseSelectedPage-info__definition p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  padding-left: 10px;
+}
+
+
+.CourseSelectedPage-info__items li {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  margin-left: 20px;
+}
+
+.CourseSelectedPage-links{
+  margin-bottom: 30px;
+}
+
+.CourseSelectedPage-links__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.CourseSelectedPage-links__list-item {
+  list-style: none;
+  border-radius: 5px;
+  border: 1px solid var(--lightGray);
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.CourseSelectedPage-courses__courses {
+  display: flex;
+  overflow-x: scroll;
+  gap: 15px;
+  padding-bottom: 10px;
+}
+
+@media(min-width: 500px) {
+  .CourseSelectedPage-video_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 700px) {
+  .CourseSelectedPage-video{
+    padding: 20px;
+  }
+
+  .CourseSelectedPage-video_buttons-takeExam.button,
+  .CourseSelectedPage-video_buttons-nextBack button {
+    font-size: 1.6rem;
+    padding: 10px 50px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .CourseSelectedPage-video{
+    padding: 30px;
+  }
+
+  .CourseSelectedPage-courses__courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    overflow-x:auto;
+    gap: 15px;
+    padding-bottom: 10px;
+  }
+}
