@@ -1,0 +1,91 @@
+.LearningPathSelected {
+  padding: 20px 30px;
+}
+
+.LearningPathSelected-name {
+  margin-bottom: 20px;
+}
+
+.LearningPathSelected-name__title {
+  font-size: 2.2rem;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.LearningPathSelected-name__takeExam {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--darkerPurple);
+  padding: 8px 25px;
+}
+
+.LearningPathSelected-name__takeExam span {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  color: var(--purple);
+  background-color: var(--darkerPurple);
+}
+
+.LearningPathSelected-description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  padding-left: 5px;
+  margin-bottom: 20px;
+}
+
+.LearningPathSelected-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.LearningPathSelected-buttons button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--white);
+  background-color: var(--lightGray);
+  padding: 10px 15px;
+}
+
+.LearningPathSelected-courses__level-title {
+  font-size: 2rem;
+  color: var(--white);
+  padding-left: 10px;
+  margin-bottom: 30px;
+}
+
+.LearningPathSelected-courses__level-courses {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.LearningPathSelected-courses__level {
+  margin-bottom: 20px;
+}
+
+@media(min-width: 600px) {
+  .LearningPathSelected-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

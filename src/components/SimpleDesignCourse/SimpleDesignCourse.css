@@ -1,0 +1,61 @@
+.SimpleDesignCourse {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--rgbaBlack);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.SimpleDesignCourse-courseName {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+.SimpleDesignCourse-courseName span {
+  display: flex;
+  align-items: center;
+  color: var(--purple);
+  cursor: pointer;
+}
+
+.SimpleDesignCourse-courseName p {
+  color: var(--white);
+}
+
+.SimpleDesignCourse-addPath {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 170px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--white);
+  background-color: var(--darkerPurple);
+}
+
+.SimpleDesignCourse-addPath span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--purple);
+  background-color: var(--darkerPurple);
+}
+
+@media(min-width: 600px) {
+  .SimpleDesignCourse {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--rgbaBlack);
+    border-radius: 10px;
+    padding: 10px 20px;
+  }
+}
