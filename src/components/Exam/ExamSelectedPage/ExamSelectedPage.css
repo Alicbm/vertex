@@ -1,0 +1,224 @@
+.ExamSelectedPage {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--lightBlack);
+}
+
+.ExamSelectedPage-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .7);
+  padding: 10px 20px;
+  z-index: 10;
+}
+
+.ExamSelectedPage-header__menu {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  color: var(--purple);
+}
+
+.ExamSelectedPage-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--lightBlack);
+  padding: 20px 10px;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  border-bottom: 2px solid var(--rgbaBlack);
+}
+
+.ExamSelectedPage-title__title {
+  font-size: 3rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.ExamSelectedPage-title__button.button {
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: var(--purple);
+  padding: 8px 40px;
+}
+
+.ExamSelectedPage-content__sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .8);
+  z-index: 50;
+}
+
+.ExamSelectedPage-content__sidebar.inactive {
+  display: none;
+}
+
+.ExamSelectedPage-content__sidebar-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 4rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.ExamSelectedPage-content__sidebar-modal {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 100%;
+  background-color: var(--lightBlack);
+  gap: 10px;
+  padding: 20px;
+}
+
+.ExamSelectedPage-content__sidebar-modal__time,
+.ExamSelectedPage-content__sidebar-modal__counter,
+.ExamSelectedPage-content__sidebar-modal__numberQuestions {
+  text-align: center;
+  background-color: var(--rgbaBlack);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.ExamSelectedPage-content__sidebar-modal__time {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.ExamSelectedPage-content__sidebar-modal__counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.ExamSelectedPage-content__sidebar-modal__counter span {
+  display: flex;
+  align-items: center;
+}
+
+.ExamSelectedPage-content__sidebar-modal__numberQuestions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.ExamSelectedPage-content__sidebar-modal__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.ExamSelectedPage-content__sidebar-modal__cancel {
+  height: 45px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: var(--purple);
+}
+
+.ExamSelectedPage-content__sidebar-modal__grid span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--rgbaBlack);
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.ExamSelectedPage-content__question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+@media (min-width: 700px) {
+  .ExamSelectedPage-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--lightBlack);
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    border-bottom: 2px solid var(--rgbaBlack);
+  }
+}
+
+@media (min-width: 900px) {
+  .ExamSelectedPage {
+    background-color: transparent;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .ExamSelectedPage-header, .ExamSelectedPage-content__sidebar-close {
+    display: none;
+  }
+
+  .ExamSelectedPage-title {
+    margin-top: 0;
+  }
+
+  .ExamSelectedPage-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 30px 0;
+    margin: 0 auto;
+  }
+
+  .ExamSelectedPage-content__sidebar {
+    position: static; 
+    width: 350px;
+  }
+
+  .ExamSelectedPage-content__sidebar.inactive {
+    display: block;
+  }
+
+  .ExamSelectedPage-content__sidebar-modal {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .ExamSelectedPage-content__question {
+    background-color: var(--rgbaBlack);
+    border-radius: 10px;
+    padding: 40px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .ExamSelectedPage-header__title {
+    font-size: 1.6rem;
+    text-align: left;
+    padding-left: 30px;
+  }
+}
