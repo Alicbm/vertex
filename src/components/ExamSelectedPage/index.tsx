@@ -1,6 +1,6 @@
 import { GoClockFill } from "react-icons/go";
 import { IoClose, IoMenu } from "react-icons/io5";
-import { Exam } from "../../Exam";
+import { Exam } from "../Exam";
 import './ExamSelectedPage.css';
 import { useState } from "react";
 

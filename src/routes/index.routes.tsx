@@ -7,7 +7,9 @@ import { LearningPaths } from '../pages/LearningPaths';
 import { ExercisesPage } from '../pages/ExercisesPage';
 import { LearningPathSelected } from '../pages/LearningPathSelected';
 import { CourseSelectedPage } from '../pages/CourseSelectedPage';
-import { ExamSelectedPage } from '../components/Exam/ExamSelectedPage';
+import { ExamSelectedPage } from '../components/ExamSelectedPage';
+import { AnswerSelectedPage } from '../pages/AnswerSelectedPage';
+import { ExamResults } from '../pages/ExamResults';
 
 export function Router () {
   return (
@@ -22,6 +24,8 @@ export function Router () {
         
         <Route path='/exams' element={ <ExamsPage /> } />
         <Route path='/exams/selected' element={ <ExamSelectedPage /> } />
+        <Route path='/exams/answer' element={ <AnswerSelectedPage /> } />
+        <Route path='/exams/results' element={ <ExamResults /> } />
         
         <Route path='/learning-paths' element={ <LearningPaths />} />
         <Route path='/learning-paths/selected' element={ <LearningPathSelected /> } />

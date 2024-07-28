@@ -154,6 +154,10 @@
 }
 
 @media (min-width: 700px) {
+  .ExamSelectedPage{
+    padding: 30px;
+  }
+
   .ExamSelectedPage-title {
     display: flex;
     flex-direction: row;
@@ -190,8 +194,8 @@
     gap: 20px;
     width: 100%;
     height: 100%;
-    padding: 30px 0;
-    margin: 0 auto;
+    padding: 0;
+    margin: 0 auto 20px auto;
   }
 
   .ExamSelectedPage-content__sidebar {
@@ -209,7 +213,7 @@
   }
   
   .ExamSelectedPage-content__question {
-    background-color: var(--rgbaBlack);
+    background-color: var(--lightBlack);
     border-radius: 10px;
     padding: 40px;
   }
