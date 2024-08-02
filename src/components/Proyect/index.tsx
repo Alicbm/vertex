@@ -1,7 +1,11 @@
+import { useState } from 'react';
+import { ModalTakeChallenge } from '../ModalTakeChallenge';
 import image from '../../images/proyect-test.png';
 import './Proyect.css';
 
 export function Proyect () {
+  const [modal, setModal] = useState(false);
+
   return (
     <div className="Proyect">
       <img src={image} alt=""  className="Proyect-image" />
@@ -13,11 +17,12 @@ export function Proyect () {
 
         <div className="Proyect-title__button">
           <button>Ver código</button>
-          <button>Ver proyecto</button>
+          <button onClick={() => setModal(true)}>Ver proyecto</button>
         </div>
       </div>
 
       <p className="Proyect-text">Desarrolla una aplicación de películas, en la cual puedas acceder a su información, como actores, comentarios, categoría y demás. Desarrolla una aplicación de películas, en la cual puedas acceder a su información, como actores, comentarios, categoría y demás.</p>
+      {modal && <ModalTakeChallenge setModal={setModal} /> }
     </div>
   )
 }

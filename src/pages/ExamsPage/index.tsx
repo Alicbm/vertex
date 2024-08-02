@@ -3,8 +3,8 @@ import { MainView } from "../../components/MainView";
 import { InputCourse } from "../../components/InputCourse";
 import { ItemsFilter } from "../../components/ItemsFilter";
 import { ItemExam } from "../../components/ItemExam";
-import './ExamsPage.css';
 import { Pagination } from "../../components/Pagination";
+import './ExamsPage.css';
 
 export function ExamsPage () {
   const [modal, setModal] = useState(false);
