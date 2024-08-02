@@ -17,20 +17,20 @@ export function Router () {
       <Routes>
         <Route path='/' element={ <Home /> } />
         
-        <Route path='/courses' element={ <CoursesPage /> } />
-        <Route path='/courses/selected' element={ <CourseSelectedPage /> } />
+        <Route path='/cursos' element={ <CoursesPage /> } />
+        <Route path='/cursos/seleccionado' element={ <CourseSelectedPage /> } />
         
-        <Route path='/challenges' element={ <ChallengesPage /> } />
+        <Route path='/retos' element={ <ChallengesPage /> } />
         
-        <Route path='/exams' element={ <ExamsPage /> } />
-        <Route path='/exams/selected' element={ <ExamSelectedPage /> } />
-        <Route path='/exams/answer' element={ <AnswerSelectedPage /> } />
-        <Route path='/exams/results' element={ <ExamResults /> } />
+        <Route path='/examenes' element={ <ExamsPage /> } />
+        <Route path='/examenes/seleccionado' element={ <ExamSelectedPage /> } />
+        <Route path='/examenes/respuestas' element={ <AnswerSelectedPage /> } />
+        <Route path='/examenes/resultados' element={ <ExamResults /> } />
         
-        <Route path='/learning-paths' element={ <LearningPaths />} />
-        <Route path='/learning-paths/selected' element={ <LearningPathSelected /> } />
+        <Route path='/rutas' element={ <LearningPaths />} />
+        <Route path='/rutas/seleccionado' element={ <LearningPathSelected /> } />
         
-        <Route path='/exercises' element={ <ExercisesPage /> } />
+        <Route path='/ejercicios' element={ <ExercisesPage /> } />
       </Routes>
     </HashRouter>
   )

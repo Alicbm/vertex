@@ -1,10 +1,8 @@
-import { FaHome, FaLinkedin, FaGithub, FaUserCircle  } from "react-icons/fa";
-import { LiaBookSolid } from "react-icons/lia";
-import { FaLayerGroup } from "react-icons/fa6";
-import { GrTest } from "react-icons/gr";
-import { IoMdTrophy } from "react-icons/io";
-import { PiExamFill } from "react-icons/pi";
+import { FaLinkedin, FaGithub, FaUserCircle  } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
+import { useLocation, useNavigate } from "react-router-dom";
+import { routesServices } from "../../utils/routes";
+import { verfyServiceSelected } from "../../utils/verifyRouteSelected";
 import './Menu.css';
 
 type Props = {
@@ -13,6 +11,11 @@ type Props = {
 }
 
 export function Menu ({ modal, setModal }: Props) {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  verfyServiceSelected(routesServices, location);
+
   return (
     <div className={`Menu ${!modal ? 'inactive' : ''}`}>
       <span 
@@ -26,12 +29,18 @@ export function Menu ({ modal, setModal }: Props) {
         </div>
 
         <ul className="Menu-content__sections">
-          <li><span><FaHome /> </span>Inicio</li>
-          <li><span><LiaBookSolid /> </span>Cursos</li>
-          <li><span><FaLayerGroup /> </span>Rutas</li>
-          <li><span><GrTest /> </span>Ejercicios</li>
-          <li><span><IoMdTrophy /> </span>Retos</li>
-          <li><span><PiExamFill /> </span>Exámenes</li>
+          {
+            routesServices?.map(item => (
+              <li 
+                key={item?.label}
+                onClick={() => navigate(item?.route)}
+                className={`${item?.selected ? 'activated': ''}`}
+              >
+                <span>{item?.icon}</span>
+                { item?.label }
+              </li>   
+            ))
+          }
         </ul>
 
         <ul className="Menu-content__contact">

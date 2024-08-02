@@ -44,10 +44,17 @@
   font-weight: 600;
   list-style: none;
   padding: 15px 20px;
+  cursor: pointer;
+}
+.Menu-content__sections li:hover {
+  color: var(--white);
+  background-color: var(--lightGray);
+  border-radius: 10px;
 }
 
-.Menu-content__sections li span {
-  color: var(--rgbaBlack);
+.Menu-content__sections li.activated {
+  background-color: var(--lightGray);
+  border-radius: 10px;
 }
 
 .Menu-content__contact {
