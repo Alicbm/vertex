@@ -26,5 +26,6 @@
     display: grid;
     grid-template-columns: 40% 60%;
     place-items: center;
+    gap: 30px;
   }
 }

@@ -1,9 +1,14 @@
 import { IoIosBatteryCharging } from "react-icons/io";
 import { IoHeartCircleOutline } from "react-icons/io5";
+import { CourseI } from "../../types";
 import image from '../../images/course-test.png';
 import './Course.css';
 
-export function Course () {
+type Props = {
+  course: CourseI;
+}
+
+export function Course ({ course }: Props) {
   return (
     <div className="Course">
       
@@ -16,12 +21,12 @@ export function Course () {
         <span className="Course-image__icon"><IoHeartCircleOutline /></span>
       </div>
 
-      <p className="Course-title">Curso Básico de Javascript</p>
+      <p className="Course-title">{course?.name}</p>
       
       <div className="Course-takeCourse">
         <div className="Course-takeCourse__level">
           <span><IoIosBatteryCharging /></span>
-          <p>Básico</p>
+          <p>{course?.difficulty}</p>
         </div>
         
         <button className="Course-takeCourse__button">Tomar curso</button>

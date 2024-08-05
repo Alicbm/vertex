@@ -13,15 +13,10 @@
 }
 
 @media (min-width: 1200px) {
+  .ExercisesPage-filter {    
+    display: flex;
+  }
   .ExercisesPage-proyects {  
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  }
-}
-
-@media (min-width: 1000px) {
-  .ExercisesPage-filter {
-    display: flex;
-    align-items: start;
-    flex-direction: column;
   }
 }

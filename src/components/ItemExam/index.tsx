@@ -2,21 +2,24 @@ import { useState } from "react";
 import { FaBatteryQuarter } from "react-icons/fa";
 import { ModalTakeExam } from "../ModalTakeExam";
 import image from '../../images/js-test.png';
+import { ExamI } from "../../types";
 import './ItemExam.css';
 
-export function ItemExam () {
-  const [modal, setModal] = useState(false);
+type Props = {
+  exam: ExamI;
+}
 
-  console.log(modal);
+export function ItemExam ({ exam }: Props) {
+  const [modal, setModal] = useState(false);
 
   return (
     <div className="ItemExam">
 
       <div className="ItemExam-info">
-        <h4 className="ItemExam-info__title">Examen de Javascript</h4>
+        <h4 className="ItemExam-info__title">{exam?.name}</h4>
         <button className='ItemExam-info__level button'>
           <span><FaBatteryQuarter /></span>
-          Básico
+          {exam?.difficulty}
         </button>
         <button 
           className="ItemExam-info__takeExam button"

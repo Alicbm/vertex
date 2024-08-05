@@ -97,7 +97,7 @@
   .Exercise-header {
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
     background-color: var(--lightGray);
     border-radius: 8px;
     padding: 10px 20px;

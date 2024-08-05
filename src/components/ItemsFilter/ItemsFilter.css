@@ -1,27 +1,91 @@
 .ItemsFilter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  width: 100%;
   gap: 10px;
   margin: 20px 0;
 }
 
 .ItemsFilter-item {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
+  height: 35px;
+  min-width: 150px;
   background-color: var(--lightGray);
+  border-radius: 5px;
+  padding: 0px;
 }
+
 .ItemsFilter-item p {
   font-size: 1.4rem;
   color: var(--white);
+  padding-left: 10px;
 }
 
 .ItemsFilter-item span {
   display: flex;
   align-items: center;
-  color: var(--purple);
+  height: 100%;
+  color: var(--lightGray);
+  background-color: var(--grayText);
   font-size: 1.4rem;
+  border-radius: 0 5px 5px 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.ItemsFilter-item.eachItem {
+  position: relative;
+}
+
+.ItemsFilter-item__list {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--lightGray);
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 50;
+}
+
+.ItemsFilter-item__list input {
+  width: 100%;
+  height: 30px;
+  font-size: 1.6rem;
+  color: var(--white);
+  background-color: var(--lightGray);
+  border: none;
+  border-bottom: 1px solid var(--purple);
+  outline: none;
+  padding: 20px 15px;
+}
+
+.ItemsFilter-item__list li {
+  width: 100%;
+  list-style: none;
+  font-size: 1.6rem;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.ItemsFilter-item__list li.newBg {
+  background-color: var(--rgbaBlack);
+}
+
+.ItemsFilter-item__list li:hover {
+  color: var(--white);
+  background-color: var(--rgbaBlack);
+}
+
+@media (min-width: 1200px) {
+  .ItemsFilter {
+    display: flex;
+  }
+   
 }

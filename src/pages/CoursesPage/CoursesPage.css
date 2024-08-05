@@ -2,6 +2,15 @@
   margin-bottom: 20px;
 }
 
+.CoursesPage-resultText {
+  padding-left: 20px;
+  margin: 20px 0;
+}
+
+.CoursesPage-resultText i {
+  color: var(--purple);
+}
+
 .CoursesPage-courses {  
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -26,5 +35,6 @@
     display: grid;
     grid-template-columns: 40% 60%;
     place-items: center;
+    gap: 30px;
   }
 }

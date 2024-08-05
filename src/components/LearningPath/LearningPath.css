@@ -9,7 +9,7 @@
   color: var(--white);
   background-color: var(--darkPurple);
   padding: 8px 15px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .LearningPath-title {
@@ -20,6 +20,7 @@
 
 .LearningPath-text {
   font-size: 1.5rem;
+  line-height: 2.2rem;
   margin-bottom: 10px;
 }
 

@@ -17,6 +17,7 @@
 .ItemExam-info__title {
   font-size: 1.5rem;
   font-weight: bold;
+  line-height: 2.2rem;
   color: var(--white);
 }
 
@@ -48,6 +49,8 @@
 
 .ItemExam-image {
   width: 35%;
+  display: grid;
+  place-items: center;
   background-color: var(--lightGray);
   padding: 10px;
 }

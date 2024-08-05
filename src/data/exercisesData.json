@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "test": "Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un número deberá indicarse con un «alert» y seguir pidiendo. Al salir con “cancelar” deberá indicarse la suma total de los números introducidos.",
+      "learningPath": "Desarrollo Front-End",
+      "image": "https://image.test",
+      "difficulty": "Basico",
+      "tool": "Javascript"
+    },
+    {
+      "id": 2,
+      "test": "Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un número deberá indicarse con un «alert» y seguir pidiendo. Al salir con “cancelar” deberá indicarse la suma total de los números introducidos.",
+      "learningPath": "Desarrollo Front-End",
+      "image": "https://image.test",
+      "difficulty": "Intermedio",
+      "tool": "Javascript"
+    },
+    {
+      "id": 3,
+      "test": "Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un número deberá indicarse con un «alert» y seguir pidiendo. Al salir con “cancelar” deberá indicarse la suma total de los números introducidos.",
+      "learningPath": "Desarrollo Back-End",
+      "image": "https://image.test",
+      "difficulty": "Basico",
+      "tool": "Python"
+    },
+    {
+      "id": 4,
+      "test": "Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un número deberá indicarse con un «alert» y seguir pidiendo. Al salir con “cancelar” deberá indicarse la suma total de los números introducidos.",
+      "learningPath": "Desarrollo Back-End",
+      "image": "https://image.test",
+      "difficulty": "Intermedio",
+      "tool": "Python"
+    },
+    {
+      "id": 5,
+      "test": "Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un número deberá indicarse con un «alert» y seguir pidiendo. Al salir con “cancelar” deberá indicarse la suma total de los números introducidos.",
+      "learningPath": "Desarrollo Front-End",
+      "image": "https://image.test",
+      "difficulty": "Avanzado",
+      "tool": "Javascript"
+    },
+    {
+      "id": 6,
+      "test": "Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un número deberá indicarse con un «alert» y seguir pidiendo. Al salir con “cancelar” deberá indicarse la suma total de los números introducidos.",
+      "learningPath": "Desarrollo Back-End",
+      "image": "https://image.test",
+      "difficulty": "Avanzado",
+      "tool": "Python"
+    },
+    {
+      "id": 7,
+      "test": "Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un número deberá indicarse con un «alert» y seguir pidiendo. Al salir con “cancelar” deberá indicarse la suma total de los números introducidos.",
+      "learningPath": "Desarrollo Front-End",
+      "image": "https://image.test",
+      "difficulty": "Basico",
+      "tool": "HTML"
+    },
+    {
+      "id": 8,
+      "test": "Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un número deberá indicarse con un «alert» y seguir pidiendo. Al salir con “cancelar” deberá indicarse la suma total de los números introducidos.",
+      "learningPath": "Desarrollo Front-End",
+      "image": "https://image.test",
+      "difficulty": "Basico",
+      "tool": "CSS"
+    },
+    {
+      "id": 9,
+      "test": "Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un número deberá indicarse con un «alert» y seguir pidiendo. Al salir con “cancelar” deberá indicarse la suma total de los números introducidos.",
+      "learningPath": "Desarrollo Back-End",
+      "image": "https://image.test",
+      "difficulty": "Basico",
+      "tool": "PHP"
+    },
+    {
+      "id": 10,
+      "test": "Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un número deberá indicarse con un «alert» y seguir pidiendo. Al salir con “cancelar” deberá indicarse la suma total de los números introducidos.",
+      "learningPath": "Desarrollo Back-End",
+      "image": "https://image.test",
+      "difficulty": "Intermedio",
+      "tool": "PHP"
+    }
+  ]
+}

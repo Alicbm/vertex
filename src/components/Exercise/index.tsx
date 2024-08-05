@@ -2,32 +2,37 @@ import { useState } from "react";
 import { FaBatteryQuarter } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 import { FaAngleDown } from "react-icons/fa6";
+import { ExerciseI } from "../../types";
 import './Exercise.css';  
 
-export function Exercise () {
+type Props = {
+  exercise: ExerciseI;
+}
+
+export function Exercise ({ exercise }: Props) {
   const [result, setResult] = useState(false);
 
   return (
     <div className={`Exercise ${result ? 'expanded' : ''}`}>
       
       <div className="Exercise-header">
-        <h4 className="Exercise-header__title">Ejercicios 1</h4>
+        <h4 className="Exercise-header__title">Ejercicios {String(exercise?.id)}</h4>
 
         <div className="Exercise-header__buttons">
           <button className="button">
             <span><FaBatteryQuarter /></span>
-            Básica
+            {exercise?.difficulty}
           </button>
 
           <button className="button">
             <span><SiJavascript /></span>
-            Javascript
+            {exercise?.tool}
           </button>
         </div>
 
       </div>
 
-      <p className="Exercise-text">Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un número deberá indicarse con un «alert» y seguir pidiendo. Al salir con “cancelar” deberá indicarse la suma total de los números introducidos.</p>
+      <p className="Exercise-text">{exercise?.test}</p>
       
       <div 
         className="Exercise-solution"

@@ -42,7 +42,16 @@
 }
 
 @media (min-width: 800px) {
-  .Pagination-nextPage {
-    display: block;
+  .Pagination-nextPage, 
+  .Pagination-nextPage button, 
+  .Pagination-nextPage button span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .Pagination-nextPage button span {
+    font-size: 2rem;
   }
 }

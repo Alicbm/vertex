@@ -11,7 +11,7 @@ export function Pagination () {
       </div>
 
       <div className="Pagination-nextPage">
-        <button className="button">Siguiente Página <GrFormNextLink /> </button>
+        <button className="button">Siguiente Página <span><GrFormNextLink /></span> </button>
       </div>
 
       <div className="Pagination-page">
